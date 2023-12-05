@@ -34,7 +34,7 @@ class Car:
     def static_annual_cost(self):
         return self.service_cost + self.ensurance_cost
     def dynamic_annual_cost(self, mileage):
-        return self.fuel_consamption * mileage / 100 * get_gas_price(self)
+        return self.fuel_consamption * mileage / 100 * get_gas_price()
     def annual_cost(self, mileage: int):
         return self.static_annual_cost() + self.dynamic_annual_cost(mileage)
 
